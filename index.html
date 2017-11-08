@@ -2,26 +2,102 @@
 <html>
 <head>
   <title>Static Comp 3</title>
+  <script src="https://use.fontawesome.com/385d6d6192.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<wrapper>
-<header></header>
 <nav>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <div class="nav-photo-top">
+      <img class="nav-photo" src="./images/jeffgoodall.jpg" alt="Headshot of Jeff Goodall">
+      <span>Jeff Goodall</span>
+    </div>
+    <hr>
+    <ul>
+      <li class="main"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
+      <li class="main"><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>home</a></li>
+      <li class="main"><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>home</a></li>
+      <li class="main"><a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>home</a></li>
+      <li class="main"><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>home</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li class="admin"><a href="#"><i class="fa fa-users" aria-hidden="true"></i>users</a></li>
+      <li class="admin"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>users</a></li>
+      <li class="admin"><a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i>users</a></li>
+      <li class="admin"><a href="#"><i class="fa fa-book" aria-hidden="true"></i>users</a></li>
+      <li class="admin"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i>users</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li class="catagories">
+        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        <input id="checkbox1" type="checkbox">
+        <label for="checkbox1">administration</label>
+      </li>
+      <li class="catagories">
+        <i class="fa fa-square" aria-hidden="true"></i>
+        <input id="checkbox2" type="checkbox">
+        <label for="checkbox2">administration</label>
+      </li>
+      <li class="catagories">
+        <i class="fa fa-square" aria-hidden="true"></i>
+        <input id="checkbox3" type="checkbox">
+        <label for="checkbox3">administration</label>
+      </li>
+      <li class="catagories">
+        <i class="fa fa-square" aria-hidden="true"></i>
+        <input id="checkbox4" type="checkbox">
+        <label for="checkbox4">administration</label>
+      </li>
+    </ul>
   </div>
 
-  <!-- Use any element to open the sidenav -->
-  <span onclick="openNav()">open</span>
+  
 </nav>
-<aside></aside>
-<aside></aside>
+<wrapper id="main-content">
+<header id="header">header
+<!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">open</span>
+</header>
+
+<section id="section1">section1
+  <article class="left-side">
+  
+  
+    <div class="circle green">
+        <div class="circle-text">
+          <h3>80%</h3>
+          <p>APPLICANTS</p>
+        </div>   
+    </div>
+
+    <div class="circle blue">
+        <div class="circle-text">
+          <h3>80%</h3>
+          <p>APPLICANTS</p>
+        </div>   
+    </div>
+
+    <div class="circle yellow">
+        <div class="circle-text">
+          <h3>80%</h3>
+          <p>APPLICANTS</p>
+        </div>   
+    </div>
+ 
+
+  </article>
+
+  <article class="right-side">
+    GRAPH
+  </article>
+</section>
+<section id="section2">section2</section>
+<aside id="aside">aside</aside>
 </wrapper>
 <script src="./script.js"></script>
 </body>
