@@ -59,19 +59,43 @@
   
 </nav>
 <wrapper id="main-content">
-<header id="header">header
-<header class="header-search-menu">
-  <span onclick="openNav()">open</span>
-  
-</header>
+<header id="header">
+<section class="header-search-menu">
+  <button onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" aria-label="Open Nav bar"></i></button>
+  <div class="search-bar">
+    <label for="search-input"> <i class="fa fa-search" aria-hidden="true"></i>
+      <input id="search-input" type="text" placeholder="Search for job, task or resume">
+    </label>
+
+   
+  </div>
+  <button><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+  <button><i class="fa fa-calendar" aria-hidden="true"></i></button>
+  <button><i class="fa fa-th" aria-hidden="true"></i></button>
+</section>
 <section class="header-content">
-  
+  <div class="headline">
+    <h2>Junior Developer</h2>
+    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Denver, CO &#183; Preview this post</p>
+  </div>
+  <button class="with-content">
+  <i class="fa fa-circle" aria-hidden="true"></i><span>open</span>
+</button>
+  <button>
+    <i class="fa fa-download" aria-hidden="true"></i>
+  </button>
+  <button>
+    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+  </button>
+  <button>
+    <i class="fa fa-trash" aria-hidden="true"></i>
+  </button>
 </section>
 <nav class="header-nav">
   <ul>
   <li>Summary</li>
   <li>Applicants</li>
-  <li>JobBoard</li>
+  <li>Job Board</li>
   <li>Interviews</li>
   <li>Activity</li>
   <li>Broadcast</li>
@@ -109,7 +133,7 @@
   </article>
 
   <article class="right-side">
-    GRAPH
+   <img class="chart-image" src="./images/jeff-chart.png" alt="Jeff Goodalls Git Hub Contributions Chart">
   </article>
 </section>
 <section id="section2">section2</section>

@@ -9,15 +9,24 @@ body {
     font-size: 1em;
 }
 
-/*HEADER*/
-
-.header-search-menu {
-
+button {
+    background: none;
+    border: 1px solid black;
+    line-height: normal;
+    overflow: visible;
+    padding: 15px;
+    font-size: 1.2em;
+    display: inline-block;
 }
 
+button:hover {
+    background-color: blue;
+}
 
+/*===============================================
+layout
+===============================================*/
 
-/*layout*/
 wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,7 +59,87 @@ wrapper {
     grid-row: 3;
 }
 
+/*==============================================
+HEADER
+==============================================*/
 
+#header {
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+}
+
+.header-search-menu {
+    grid-column: 1/4;
+    background-color: purple;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 70%;
+}
+
+#search-input{
+    border: none;
+    background: inherit;
+    margin-top: 22px;
+    width: 70%;
+}
+
+.header-content {
+    grid-column: 1/4;
+    background-color: grey;
+    grid-row: 2;
+    margin: 1em 0em 1em 2em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.headline {
+    width: 70%;
+}
+
+.header-content button {
+    border-radius: 50px;
+    margin: .5em;
+    font-size: .75em;
+    padding: 8px 0px;
+    height: 2.5em;
+}
+
+.with-content {
+    width: 25%;
+    padding: 8px;
+}
+
+.header-nav {
+    grid-column: 1/4;
+    background-color: purple;
+    grid-row: 3;
+}
+
+.header-nav ul>li{
+    display: inline;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-nav ul>li:hover{
+    border-bottom: 2px solid blue;
+}
+
+
+/*=============================================
+SECTION 1
+=============================================*/
 /*Percentage Circles*/
 
 
@@ -85,6 +174,11 @@ wrapper {
     text-align: center;
     margin: auto;
     transform: rotate(-45deg);
+}
+
+.chart-image {
+    height: 100px;
+    width:300px;
 }
 
 /* The side navigation menu */
