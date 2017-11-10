@@ -202,26 +202,26 @@ h3 {
     border-radius: 50%;
     height: 8em;
     width: 8em;
-    border: .5em solid grey;
+    border: .5em solid #DAE5EA;
     display: inline-flex;
     margin-right: 1em;
 }
 
 .green {
-    border-bottom: .5em solid green;
-    border-left: .5em solid green;
-    border-top: .5em solid green;
+    border-bottom: .5em solid #4CB7BF;
+    border-left: .5em solid #4CB7BF;
+    border-top: .5em solid #4CB7BF;
     transform: rotate(45deg);
 }
 
 .blue {
-    border-bottom: .5em solid blue;
+    border-bottom: .5em solid #24A3F2;
     transform: rotate(45deg);
 }
 
 .yellow {
-    border-bottom: .5em solid yellow;
-    border-left: .5em solid yellow;
+    border-bottom: .5em solid #AF67A5;
+    border-left: .5em solid #AF67A5;
     transform: rotate(45deg);
 }
 
@@ -245,7 +245,13 @@ h3 {
     display: block;
 }
 
-/* The side navigation menu */
+.chart-image:hover {
+    background-image: url('./images/jeff-chart2.png');
+}
+
+/*========================================================
+ The side navigation menu 
+========================================================*/
 
 /*input[type="checkbox"]:checked + label {
 background: yellow;
@@ -328,6 +334,69 @@ border-radius: 3px;
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+/*====================================================
+MAIN CONTENT SECTION
+====================================================*/
+
+.main-content-wrapper {
+    margin: 3em;
+    background-color: #fff;
+}
+
+.main-content {
+    min-height: 4em;
+    border-bottom: 2px solid grey;
+    padding-top: 1.5em;
+    margin: 0 1em;
+}
+
+.main-content-btn {
+    color:#fff;
+    background-color: #7E8CA6;
+    padding: 2px;
+}
+
+.main-content .fa-pencil {
+    color: #fff;
+}
+
+.main-content span {
+    font-weight: 700;
+    display: inline-block;
+    width: 10em;
+}
+
+.main-content-header {
+    background-color: #707E94;
+    color: #fff;
+    margin: 0;
+    padding-left: 1em;
+}
+
+
+/*======================================================
+ASIDE
+======================================================*/
+.aside {
+
+}
+
+.sharing {
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    padding: 1em;
+    font-size: 1.5em;
+    height: 40px;
+    width: 100px;
+    border:1px solid black;
+    display: block;
+    background-color: blue;
+}
+
 
 
 /*====================================================
