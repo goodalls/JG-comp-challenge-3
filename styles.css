@@ -3,11 +3,12 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #696969;
+    background-color:#EDF2F6; 
 }
 
 .fa {
     margin: 0 10px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 button {
@@ -17,6 +18,13 @@ button {
     overflow: visible;
     color:#696969;
 }
+
+hr { 
+    border:2px solid #696969;
+    width: 45%;
+    border-radius: 5px;
+}
+
 .square-button {
     padding: 15px;
     font-size: 1.2em;
@@ -36,14 +44,13 @@ button {
     font-size: .75em;
     padding: 8px 0px;
     height: 2.5em;
+    line-height: 1em;
 }
-
 
 .with-content {
     width: 90px;
     padding: 8px;
 }
-
 
 .round-button:hover {
     background-color: #26A5F7;
@@ -57,7 +64,7 @@ layout
 wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, minmax(150px, auto));
+    grid-template-rows: repeat(4, auto));
     grid-gap: 10px;
 }
 
@@ -65,29 +72,39 @@ wrapper {
     grid-column: 1/4;
     background-color: #fff;
     grid-row: 1;
+    padding-bottom: 10px;
 }
 
 #section1 {
     grid-column: 1/4;
-    background-color: purple;
+    background-color: #EDF2F6;
     grid-row: 2;
     display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.drawer {
+    grid-column: 1/4;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
 #section2 {
     grid-column: 1/3;
-    grid-row: 3;
-    background-color: yellow;
+    grid-row: 4;
+    background-color: #EDF2F6;
 }
 
 #aside {
     grid-column: 3/4;
-    background-color: blue;
-    grid-row: 3;
+    background-color: #EDF2F6;
+    grid-row: 4;
 }
 
 /*==============================================
-HEADER
+HEADER SECTION
 ==============================================*/
 
 #header {
@@ -95,7 +112,6 @@ HEADER
      grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
-
 }
 
 .header-search-menu {
@@ -112,6 +128,11 @@ HEADER
     display: inline;
     vertical-align: top;
     margin: 0px -9px 0px 0px;
+}
+
+
+.fa-circle {
+    color: green;
 }
 
 .search-bar {
@@ -154,6 +175,7 @@ HEADER
     margin: 14px 16px;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: .8em;
 }
 
 .header-nav ul>li:hover, .active{
@@ -168,14 +190,21 @@ SECTION 1
 =============================================*/
 /*Percentage Circles*/
 
+h3 {
+    font-size: 2em;
+}
+
+.circle-text p {
+    font-size: 0.7em;
+}
 
 .circle {
     border-radius: 50%;
-    height: 10em;
-    width: 10em;
-    background-color: #fff;
+    height: 8em;
+    width: 8em;
     border: .5em solid grey;
     display: inline-flex;
+    margin-right: 1em;
 }
 
 .green {
@@ -202,9 +231,18 @@ SECTION 1
     transform: rotate(-45deg);
 }
 
+.section1-btn {
+    background-color: #fff;
+    display: block;
+    margin: 3em auto;
+    width: 50%;
+}
+
 .chart-image {
-    height: 100px;
-    width:300px;
+    height: 125px;
+    width: 400px;
+    margin: auto;
+    display: block;
 }
 
 /* The side navigation menu */
