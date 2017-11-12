@@ -81,7 +81,7 @@ wrapper {
     grid-row: 2;
     display: flex;
     padding: 40px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .drawer {
@@ -130,6 +130,9 @@ HEADER SECTION
     margin: 0px -9px 0px 0px;
 }
 
+.text-blue {
+    color: #26A5F7;
+}
 
 .fa-circle {
     color: green;
@@ -239,8 +242,11 @@ h3 {
 }
 
 .chart-image {
-    height: 125px;
-    width: 400px;
+    background-image: url('./images/jeff-chart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8em;
+    width: 20em;
     margin: auto;
     display: block;
 }
@@ -340,7 +346,7 @@ MAIN CONTENT SECTION
 ====================================================*/
 
 .main-content-wrapper {
-    margin: 3em;
+    margin: 3em 0em 3em 3em;
     background-color: #fff;
 }
 
@@ -378,26 +384,90 @@ MAIN CONTENT SECTION
 /*======================================================
 ASIDE
 ======================================================*/
-.aside {
 
+#aside {
+    height: 700px;
 }
 
 .sharing {
     display: flex;
     flex-direction: column;
+    margin-top: 3em;
 }
 
 .social {
-    padding: 1em;
     font-size: 1.5em;
-    height: 40px;
-    width: 100px;
-    border:1px solid black;
-    display: block;
-    background-color: blue;
+    height: 3em;
+    width: 80%;
+    color: #fff;
+    margin: 0 auto .5em auto;
 }
 
+.social .fa {
+    margin-right: .5em;
+    width: 2em;
+}
 
+.facebook {
+    background-color: #4E73BF;
+}
+
+.twitter {
+    background-color: #1DABEC;
+}
+
+.linkedin {
+    background-color: #1581BA;
+}
+
+.widget {
+    width: 95%;
+    border-bottom: 1px solid black;
+    margin: 0 auto .5em auto;
+    padding: 1em 0em;
+}
+
+.widget-center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+aside article>p {
+    margin-bottom: .5em; 
+}
+
+.copy-btn {
+    background-color: #4CBBBE;
+    line-height: 2.2em;
+    width: 20%;
+}
+
+#job-link {
+    width: 80%;
+    line-height: 2.2em;
+    margin: 1em 0em;
+    background-color: #fff;
+}
+
+#button-widget {
+    width: 80%;
+    line-height: 2.2em;
+    background-color: #fff;
+    margin: 1em 0em;
+}
+
+#upload-resumes {
+    width: 100%;
+    line-height: 2.2em;
+    background-color: #fff;
+    margin: 1em 0em;
+}
 
 /*====================================================
 MEDIA QUERIES
