@@ -19,12 +19,6 @@ button {
     color:#696969;
 }
 
-hr { 
-    border:2px solid #696969;
-    width: 45%;
-    border-radius: 5px;
-}
-
 .square-button {
     padding: 15px;
     font-size: 1.2em;
@@ -89,6 +83,16 @@ wrapper {
     grid-row: 3;
     display: flex;
     justify-content: center;
+}
+
+hr { 
+    border:2px solid #DAE5EA;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.fa-chevron-circle-up {
+    color: #dae5ea;
 }
 
 #section2 {
@@ -259,27 +263,6 @@ h3 {
  The side navigation menu 
 ========================================================*/
 
-/*input[type="checkbox"]:checked + label {
-background: yellow;
-height: 1em;
-width: 1em;
-border-radius: 3px;
-}
-
-input[type="checkbox"]:unchecked + label {
-background: yellow;
-height: 1em;
-width: 1em;
-border-radius: 3px;
-}
-
-#checkbox1, #checkbox2, #checkbox3, #checkbox4 {
-background: yellow;
-height: 1em;
-width: 1em;
-border-radius: 3px;
-}*/
-
 .nav-photo {
     border-radius: 50%;
     height: 5em;
@@ -348,29 +331,47 @@ MAIN CONTENT SECTION
 .main-content-wrapper {
     margin: 3em 0em 3em 3em;
     background-color: #fff;
+    height: 745px;
 }
 
 .main-content {
-    min-height: 4em;
-    border-bottom: 2px solid grey;
-    padding-top: 1.5em;
+    min-height: 5em;
+    border-bottom: 1px solid #7e8ca6;
+    padding: 1em 0em;
     margin: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .main-content-btn {
     color:#fff;
     background-color: #7E8CA6;
-    padding: 2px;
+    padding: 10px;
+    font-size: 1em;
 }
 
+.company-logo{
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    vertical-align: middle;
+    border: .5px solid #7e8ca6;
+    padding:.2em;
+    margin-right: 0.5em;
+}
 .main-content .fa-pencil {
     color: #fff;
 }
 
 .main-content span {
     font-weight: 700;
-    display: inline-block;
-    width: 10em;
+    flex: 1;
+    color: #7e8ca6;
+}
+
+.main-content p {
+    flex: 5;
 }
 
 .main-content-header {
@@ -380,14 +381,18 @@ MAIN CONTENT SECTION
     padding-left: 1em;
 }
 
+.main-content-header span {
+    color: #fff;
+}
+
+.salary {
+    font-weight: 700;
+}
+
 
 /*======================================================
 ASIDE
 ======================================================*/
-
-#aside {
-    height: 700px;
-}
 
 .sharing {
     display: flex;
@@ -406,6 +411,7 @@ ASIDE
 .social .fa {
     margin-right: .5em;
     width: 2em;
+    float: left;
 }
 
 .facebook {
@@ -422,7 +428,7 @@ ASIDE
 
 .widget {
     width: 95%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #707E94;
     margin: 0 auto .5em auto;
     padding: 1em 0em;
 }
@@ -444,29 +450,35 @@ aside article>p {
 
 .copy-btn {
     background-color: #4CBBBE;
-    line-height: 2.2em;
+    line-height: 3em;
     width: 20%;
+    color: #fff;
 }
 
 #job-link {
     width: 80%;
-    line-height: 2.2em;
+    line-height: 3em;
     margin: 1em 0em;
     background-color: #fff;
 }
 
 #button-widget {
     width: 80%;
-    line-height: 2.2em;
+    line-height: 3em;
     background-color: #fff;
     margin: 1em 0em;
 }
 
 #upload-resumes {
     width: 100%;
-    line-height: 2.2em;
+    line-height: 3em;
     background-color: #fff;
     margin: 1em 0em;
+}
+
+#job-link::placeholder, #button-widget::placeholder, #upload-resumes::placeholder { 
+  padding-left: 1em;
+  font-size: 1.5em;
 }
 
 /*====================================================
