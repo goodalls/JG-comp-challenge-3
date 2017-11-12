@@ -265,44 +265,75 @@ h3 {
 
 .nav-photo {
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 7em;
+    width: 7em;
+    margin-bottom: 1em
 }
 
 .nav-photo-top {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #696969; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
 }
 
-/* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: .4em 0em;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 1em;
+    color: #C0C0C0;
     display: block;
     transition: 0.3s
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+.sidenav p {
+    color: #C0C0C0;
+    margin-bottom: 1em;
 }
 
-/* Position and style the close button (top right corner) */
+.sidenav .fa {
+    margin: 0em 1em 0em 2em;
+    color: #C0C0C0;
+    font-size: 1em;
+    padding: .4em 0em;
+}
+
+.checkbox-yellow {
+    color: yellow;
+}
+
+.checkbox-blue {
+    color: blue;
+}
+
+.checkbox-pink {
+    color:pink;
+}
+
+.checkbox-green {
+    color: green;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #fff;
+}
+
+.sidenav li {
+    display: flex;
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -331,7 +362,8 @@ MAIN CONTENT SECTION
 .main-content-wrapper {
     margin: 3em 0em 3em 3em;
     background-color: #fff;
-    height: 745px;
+    height: 682px;
+    border-bottom: 1px solid #7e8ca6;
 }
 
 .main-content {
@@ -428,14 +460,14 @@ ASIDE
 
 .widget {
     width: 95%;
-    border-bottom: 1px solid #707E94;
-    margin: 0 auto .5em auto;
-    padding: 1em 0em;
+    margin: auto;
+    padding-top: 1em;
 }
 
 .widget-center {
     width: 80%;
     margin: 0 auto;
+    border-bottom: 1px solid #707E94;
 }
 
 h5 {
