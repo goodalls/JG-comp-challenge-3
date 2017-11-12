@@ -283,7 +283,7 @@ h3 {
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #696969; 
+    background-color: #707E94; 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -310,19 +310,23 @@ h3 {
     padding: .4em 0em;
 }
 
-.checkbox-yellow {
+.sidenav hr { 
+    width: 100%;
+}
+
+.catagories .checkbox-yellow {
     color: yellow;
 }
 
-.checkbox-blue {
+.catagories .checkbox-blue {
     color: blue;
 }
 
-.checkbox-pink {
+.catagories .checkbox-pink {
     color:pink;
 }
 
-.checkbox-green {
+.catagories .checkbox-green {
     color: green;
 }
 
