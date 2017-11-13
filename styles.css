@@ -416,13 +416,13 @@ aside article>p {
     color: #fff;
 }
 #job-link {
-    width: 79%;
+    width: 78%;
     line-height: 3em;
     margin: 1em 0em;
     background-color: #fff;
 }
 #button-widget {
-    width: 79%;
+    width: 78%;
     line-height: 3em;
     background-color: #fff;
     margin: 1em 0em;
@@ -519,31 +519,31 @@ MEDIA QUERIES
         width: 10em;
     }
     .circle {
-    height: 12em;
-    width: 12em;
+        height: 12em;
+        width: 12em;
     }
     .left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h3 {
-    font-size: 2em;
+        font-size: 2em;
     }
     .circle-text p {
-    font-size: 1em;
+        font-size: 1em;
     }
     .main-content {
-    flex-direction: column;
+        flex-direction: column;
     }
     .social {
-    font-size: 1em;
+        font-size: 1em;
     }
     #job-link {
-    width: 75%;
+        width: 75%;
     }
     #button-widget {
-    width: 75%;
+        width: 75%;
     }
 }
 /*END OF MOBILE*/
@@ -601,15 +601,15 @@ MEDIA QUERIES
         justify-content: center;
     }
     .circle {
-    height: 12em;
-    width: 12em;
-    margin: 1em;
+        height: 12em;
+        width: 12em;
+        margin: 1em;
     }
     h3 {
-    font-size: 2.5em;
+        font-size: 2.5em;
     }
     .circle-text p {
-    font-size: 1.2em;
+        font-size: 1.2em;
     }
 }
 /*END OF TABLET*/
