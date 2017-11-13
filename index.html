@@ -1,295 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Static Comp 3</title>
-    <meta name="viewport" content="width=device-width">
-    <script src="https://use.fontawesome.com/385d6d6192.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./styles.css">
+      <title>Static Comp 3</title>
+      <meta name="viewport" content="width=device-width">
+      <script src="https://use.fontawesome.com/385d6d6192.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+      <link rel="stylesheet" href="./reset.css">
+      <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <nav>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="nav-photo-top">
-          <img class="nav-photo" src="./images/jeffgoodall.jpg" alt="Headshot of Jeff Goodall">
-          <p>Jeff Goodall<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-        </div>
-        <hr>
-        <ul>
-          <li class="main">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <a href="#">home</a>
-          </li>
-          <li class="main">
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-            <a href="#">Jobs</a>
-          </li>
-          <li class="main">
-            <i class="fa fa-file-text" aria-hidden="true"></i>
-            <a href="#">Resumes</a>
-          </li>
-          <li class="main">
-            <i class="fa fa-clipboard" aria-hidden="true"></i>
-            <a href="#">Tasks</a>
-          </li>
-          <li class="main">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <a href="#">Calendar</a>
-          </li>
-        </ul>
-        <hr>
-        <ul>
-          <li class="admin">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <a href="#">users</a>
-          </li>
-          <li class="admin">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <a href="#">Locations</a>
-          </li>
-          <li class="admin">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <a href="#">Workflows</a>
-          </li>
-          <li class="admin">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <a href="#">Job Boards</a>
-          </li>
-          <li class="admin">
-            <i class="fa fa-share-alt" aria-hidden="true"></i>
-            <a href="#">Social</a>
-          </li>
-        </ul>
-        <hr>
-        <ul>
-          <li class="catagories">
-            <i class="fa fa-check-square-o checkbox-yellow" aria-hidden="true"></i>
-            <a href="#">Administrative</a>
-            
-          </li>
-          <li class="catagories">
-            <i class="fa fa-square checkbox-blue" aria-hidden="true"></i>
-            <a href="#">Design</a>
-            
-          </li>
-          <li class="catagories">
-            <i class="fa fa-square checkbox-pink" aria-hidden="true"></i>
-            <a href="#">Executive</a>
-          </li>
-          <li class="catagories">
-            <i class="fa fa-square checkbox-green" aria-hidden="true"></i>
-            <a href="#">Human Resources</a>
-          </li>
-        </ul>
-      </div>
+      <nav>
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="nav-photo-top">
+                  <img class="nav-photo" src="./images/jeffgoodall.jpg" alt="Headshot of Jeff Goodall">
+                  <p>Jeff Goodall<i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+              </div>
+              <hr>
+              <ul>
+                  <li class="main">
+                      <i class="fa fa-home" aria-hidden="true"></i>
+                      <a href="#">home</a>
+                  </li>
+                  <li class="main">
+                      <i class="fa fa-briefcase" aria-hidden="true"></i>
+                      <a href="#">Jobs</a>
+                  </li>
+                  <li class="main">
+                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                      <a href="#">Resumes</a>
+                  </li>
+                  <li class="main">
+                      <i class="fa fa-clipboard" aria-hidden="true"></i>
+                      <a href="#">Tasks</a>
+                  </li>
+                  <li class="main">
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      <a href="#">Calendar</a>
+                  </li>
+              </ul>
+              <hr>
+              <ul>
+                  <li class="admin">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      <a href="#">users</a>
+                  </li>
+                  <li class="admin">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <a href="#">Locations</a>
+                  </li>
+                  <li class="admin">
+                      <i class="fa fa-code-fork" aria-hidden="true"></i>
+                      <a href="#">Workflows</a>
+                  </li>
+                  <li class="admin">
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      <a href="#">Job Boards</a>
+                  </li>
+                  <li class="admin">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                      <a href="#">Social</a>
+                  </li>
+              </ul>
+              <hr>
+              <ul>
+                  <li class="catagories">
+                      <i class="fa fa-check-square-o checkbox-yellow" aria-hidden="true"></i>
+                      <a href="#">Administrative</a>
 
+                  </li>
+                  <li class="catagories">
+                      <i class="fa fa-square checkbox-blue" aria-hidden="true"></i>
+                      <a href="#">Design</a>
 
-    </nav>
-    <wrapper id="main-content">
-      <header id="header">
-        <section class="header-search-menu">
-          <button class="square-button" onclick="openNav()"><i class="fa fa-caret-left" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true" aria-label="Open Nav bar"></i></button>
-          <div class="search-bar">
-            <label for="search-input"> <i class="fa fa-search" aria-hidden="true"></i>
-              <input id="search-input" type="text" placeholder="Search for job, task or resume">
-            </label>
-
-
+                  </li>
+                  <li class="catagories">
+                      <i class="fa fa-square checkbox-pink" aria-hidden="true"></i>
+                      <a href="#">Executive</a>
+                  </li>
+                  <li class="catagories">
+                      <i class="fa fa-square checkbox-green" aria-hidden="true"></i>
+                      <a href="#">Human Resources</a>
+                  </li>
+              </ul>
           </div>
-          <button class="square-button"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
-          <button class="square-button"><i class="fa fa-calendar" aria-hidden="true"></i></button>
-          <button class="square-button"><i class="fa fa-th" aria-hidden="true"></i></button>
-        </section>
-        <section class="header-content">
-          <div class="headline">
-            <h2>Jeff Goodall - Junior Developer</h2>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Denver, CO &#183; <span class="text-blue">Preview this post</span></p>
+      </nav>
+      <wrapper id="main-content">
+          <header id="header">
+              <section class="header-search-menu">
+                  <button class="square-button" onclick="openNav()"><i class="fa fa-caret-left" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true" aria-label="Open Nav bar"></i></button>
+                  <div class="search-bar">
+                      <label for="search-input"> <i class="fa fa-search" aria-hidden="true"></i>
+                          <input id="search-input" type="text" placeholder="Search for job, task or resume">
+                      </label>
+                  </div>
+                  <button class="square-button"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                  <button class="square-button"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                  <button class="square-button"><i class="fa fa-th" aria-hidden="true"></i></button>
+              </section>
+              <section class="header-content">
+                  <div class="headline">
+                      <h2>Jeff Goodall - Junior Developer</h2>
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>Denver, CO &#183; <span class="text-blue">Preview this post</span></p>
+                  </div>
+                  <button class="round-button with-content">
+                      <i class="fa fa-circle" aria-hidden="true"></i><span>open</span>
+                  </button>
+                  <button class="round-button">
+                      <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  </button>
+                  <button class="round-button">
+                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  </button>
+                  <button class="round-button">
+                      <i class="fa fa-trash" aria-hidden="true"></i>
+                  </button>
+              </section>
+              <nav class="header-nav">
+                  <ul>
+                      <li class="active">Summary</li>
+                      <li>Applicants</li>
+                      <li>Job Board</li>
+                      <li>Interviews</li>
+                      <li>Activity</li>
+                      <li>Broadcast</li>
+                      <li>Notifications</li>
+                  </ul>
+              </nav>
+          </header>
+          <section id="section1">
+              <article class="left-side">
+                  <div class="circle green">
+                      <div class="circle-text">
+                          <h3>1,000</h3>
+                          <p>APPLICANTIONS</p>
+                      </div>
+                  </div>
+                  <div class="circle blue">
+                      <div class="circle-text">
+                          <h3>15</h3>
+                          <p>JOB OFFERS</p>
+                      </div>
+                  </div>
+                  <div class="circle yellow">
+                      <div class="circle-text">
+                          <h3>100</h3>
+                          <p>INTERVIEWS</p>
+                      </div>
+                  </div>
+                  <button class="round-button section1-btn">totals - out of 5,231 views</button>
+              </article>
+              <article class="right-side">
+                  <img class="chart-image">
+                  <button class="round-button section1-btn">Contributions Chart</button>
+              </article>
+          </section>
+          <div class="drawer">
+              <hr>
+              <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+              <hr>
           </div>
-          <button class="round-button with-content">
-            <i class="fa fa-circle" aria-hidden="true"></i><span>open</span>
-          </button>
-          <button class="round-button">
-            <i class="fa fa-bookmark" aria-hidden="true"></i></i>
-          </button>
-          <button class="round-button">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-          </button>
-          <button class="round-button">
-            <i class="fa fa-trash" aria-hidden="true"></i>
-          </button>
-        </section>
-        <nav class="header-nav">
-          <ul>
-            <li class="active">Summary</li>
-            <li>Applicants</li>
-            <li>Job Board</li>
-            <li>Interviews</li>
-            <li>Activity</li>
-            <li>Broadcast</li>
-            <li>Notifications</li>
-          </ul>
-        </nav>
-      </header>
+          <section id="section2">
+              <div class="main-content-wrapper">
+                  <div class="main-content main-content-header">
+                      <span>Job Description</span>
+                      <p>
+                          <button class="main-content-btn"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Position Title</span>
+                      <p>
+                          Frontend developer - Crowd Mobile
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Company Information</span>
+                      <p>
+                          <img class="company-logo" src="./images/crowd-mobile.png" alt="Crowd Mobile Company logo">Crowd Mobile is an Australian-based global crowdsourcing micro job business with a focus on mobile applications.
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Location</span>
+                      <p>
+                          Amsterdam, Netherlands
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Daily Duties:</span>
+                      <p>
+                          Translate requirements and mock ups into fully functioning features using HTML/CSS and JavaScript. Work closely with the UX and backend team to provide a fully functional product.
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Description</span>
+                      <p>
+                          Visa sponsor - Paid relocation
+                      </p>
+                  </div>
+                  <div class="main-content">
+                      <span>Desired Experience:</span>
+                      <p>
+                          You have worked on 5+ web projects, preferably SaaS 5+ years of working experience. You're a HTML5, CSS3 and Javascript magician. Working knowledge of EcmaScript, ReactJS + Redux, TypeScript. Advanced knowledge of user experience design is a plus. Fundamental knowledge of Photoshop, Illustrator or Sketch is a plus. Experience troubleshooting cross-browser compatibility issues. Willing to relocate to Amsterdam (or within reasonable daily travel distance). Excellent English communication skills, both written and verbal.
+                      </p>
+                  </div>
 
-      <section id="section1">
-        <article class="left-side">
-
-
-          <div class="circle green">
-            <div class="circle-text">
-              <h3>1,000</h3>
-              <p>APPLICANTIONS</p>
-            </div>   
-          </div>
-
-          <div class="circle blue">
-            <div class="circle-text">
-              <h3>15</h3>
-              <p>JOB OFFERS</p>
-            </div>   
-          </div>
-
-          <div class="circle yellow">
-            <div class="circle-text">
-              <h3>100</h3>
-              <p>INTERVIEWS</p>
-            </div>   
-          </div>
-
-          <button class="round-button section1-btn">totals - out of 5,231 views</button>
-
-        </article>
-
-        <article class="right-side">
-          <img class="chart-image">
-          <button class="round-button section1-btn">Contributions Chart</button>
-        </article>
-      </section>
-      <div class="drawer">
-        <hr>
-        <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
-        <hr>
-      </div>
-      <section id="section2">
-        <div class="main-content-wrapper">
-          
-         <div class="main-content main-content-header">
-             <span>Job Description</span>
-            <p>
-             <button class="main-content-btn"><i class="fa fa-pencil" aria-hidden="true"></i>Edit</button>
-           </p>
-         </div>
-
-          <div class="main-content">
-              <span>Position Title</span>
-            <p>
-              Frontend developer -
-              Crowd Mobile
-            </p>
-          </div>
-          <div class="main-content">
-              <span>Company Information</span>
-            <p>
-              <img class="company-logo" src="./images/crowd-mobile.png" alt="Crowd Mobile Company logo">Crowd Mobile is an Australian-based global crowdsourcing micro job business with a focus on mobile applications.
-            </p>
-          </div>
-          <div class="main-content">
-              <span>Location</span>
-            <p>
-              Amsterdam, Netherlands
-            </p>
-          </div>
-        
-
-          <div class="main-content">
-              <span>Daily Duties:</span>
-            <p>
-            
-              Translate requirements and mock ups into fully functioning features using HTML/CSS and JavaScript.
-              Work closely with the UX and backend team to provide a fully functional product.
-            
-            </p>
-          </div>
-
-          <div class="main-content">
-              <span>Description</span>
-            <p>
-              Visa sponsor - Paid relocation
-            </p>
-          </div>
-
-          <div class="main-content">
-              <span>Desired Experience:</span> 
-            <p>
-            
-              You have worked on 5+ web projects, preferably SaaS
-              5+ years of working experience.
-            
-              You're a HTML5, CSS3 and Javascript magician.
-            
-              Working knowledge of EcmaScript, ReactJS + Redux, TypeScript.
-            
-              Advanced knowledge of user experience design is a plus.
-            
-              Fundamental knowledge of Photoshop, Illustrator or Sketch is a plus.
-            
-              Experience troubleshooting cross-browser compatibility issues.
-            
-              Willing to relocate to Amsterdam (or within reasonable daily travel distance).
-            
-              Excellent English communication skills, both written and verbal.
-            
-            </p>
-          </div>
-
-            <div class="main-content">
-              <span>Starting Salary</span>
-            <p class="salary">
-              €55k - 65k
-            </p>
-          </div>
-        </div>
-      </section>
-      <aside id="aside">
-        <article class="sharing">
-          <button class="social facebook">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>Post to Facebook
-          </button>
-          <button class="social twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>Tweet this Job
-          </button>
-          <button class="social linkedin">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>Post to Linkedin
-          </button>
-        </article>
-        <article class="widget1 widget">
-          <div class="widget-center">
-            <h5><i class="fa fa-globe" aria-hidden="true"></i>Link to this Job</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, tempore.</p>
-             <label for="job-link">
-               <input id="job-link" type="text"  placeholder="http://meettheipsums.com/"><button class="copy-btn">copy</button>
-             </label> </div>
-        </article>
-        <article class="widget2 widget">
-          <div class="widget-center">
-            <h5><i class="fa fa-plane" aria-hidden="true"></i>Use the button Widget</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, voluptas!</p>
-             <label for="button-widget">
-               <input id="button-widget" type="text" placeholder="http://meettheipsums.com/"><button class="copy-btn">copy</button>
-             </label> </div>
-        </article>
-        <article class="widget3 widget">
-          <div class="widget-center">
-            <h5><i class="fa fa-briefcase" aria-hidden="true"></i>Upload Resumes by Email</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, hic.</p>
-             <label for="upload-resumes">
-               <input id="upload-resumes" type="text" placeholder="http://meettheipsums.com/">
-             </label> </div>
-        </article>
-      </aside>
-    </wrapper>
-    <script src="./script.js"></script>
+                  <div class="main-content">
+                      <span>Starting Salary</span>
+                      <p class="salary">
+                          €55k - 65k
+                      </p>
+                  </div>
+              </div>
+          </section>
+          <aside id="aside">
+              <article class="sharing">
+                  <button class="social facebook">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>Post to Facebook
+                  </button>
+                  <button class="social twitter">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>Tweet this Job
+                  </button>
+                  <button class="social linkedin">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>Post to Linkedin
+                  </button>
+              </article>
+              <article class="widget1 widget">
+                  <div class="widget-center">
+                      <h5><i class="fa fa-globe" aria-hidden="true"></i>Link to this Job</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, tempore.</p>
+                      <label for="job-link">
+                          <input id="job-link" type="text" placeholder="http://meettheipsums.com/">
+                          <button class="copy-btn">copy</button>
+                      </label>
+                  </div>
+              </article>
+              <article class="widget2 widget">
+                  <div class="widget-center">
+                      <h5><i class="fa fa-plane" aria-hidden="true"></i>Use the button Widget</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, voluptas!</p>
+                      <label for="button-widget">
+                          <input id="button-widget" type="text" placeholder="http://meettheipsums.com/">
+                          <button class="copy-btn">copy</button>
+                      </label>
+                  </div>
+              </article>
+              <article class="widget3 widget">
+                  <div class="widget-center">
+                      <h5><i class="fa fa-briefcase" aria-hidden="true"></i>Upload Resumes by Email</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, hic.</p>
+                      <label for="upload-resumes">
+                          <input id="upload-resumes" type="text" placeholder="http://meettheipsums.com/">
+                      </label>
+                  </div>
+              </article>
+          </aside>
+      </wrapper>
+      <script src="./script.js"></script>
   </body>
+
 </html>
