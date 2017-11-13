@@ -1,41 +1,41 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: #696969;
     background-color: #EDF2F6;
+    color: #696969;
+    font-family: 'Ubuntu', sans-serif;
 }
 .fa {
-    margin: 0 10px;
     font-size: 1.2em;
+    margin: 0 10px;
 }
 button {
-    border: none;
     background: none;
+    border: none;
+    color: #696969;
     line-height: normal;
     overflow: visible;
-    color: #696969;
 }
 .square-button {
-    padding: 15px;
-    font-size: 1.2em;
-    border-right: 1px solid #696969;
     border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+    font-size: 1.2em;
+    padding: 15px;
 }
 .square-button:hover {
     background-color: #26A5F7;
     color: #fff;
 }
 .round-button {
-    border: 1px solid #696969;
     border-radius: 50px;
-    margin: .5em;
+    border: 1px solid #696969;
     font-size: .75em;
-    padding: 8px 0px;
     height: 2.5em;
     line-height: 1em;
+    margin: .5em;
+    padding: 8px 0px;
 }
 .with-content {
-    width: 10em;
     padding: .6em;
+    width: 10em;
 }
 .round-button:hover {
     background-color: #26A5F7;
@@ -47,45 +47,45 @@ layout
 
 wrapper {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, auto));
-    grid-gap: 10px;
 }
 #header {
-    grid-column: 1/4;
     background-color: #fff;
+    grid-column: 1/4;
     grid-row: 1;
     padding-bottom: 10px;
 }
 #section1 {
-    grid-column: 1/4;
     background-color: #EDF2F6;
-    grid-row: 2;
     display: flex;
+    grid-column: 1/4;
+    grid-row: 2;
     padding: 1em 0 0 0;
 }
 .drawer {
+    display: flex;
     grid-column: 1/4;
     grid-row: 3;
-    display: flex;
     justify-content: center;
 }
 hr {
+    border-radius: 5px;
     border: 2px solid #DAE5EA;
     width: 45%;
-    border-radius: 5px;
 }
 .fa-chevron-circle-up {
     color: #dae5ea;
 }
 #section2 {
+    background-color: #EDF2F6;
     grid-column: 1/3;
     grid-row: 4;
-    background-color: #EDF2F6;
 }
 #aside {
-    grid-column: 3/4;
     background-color: #EDF2F6;
+    grid-column: 3/4;
     grid-row: 4;
 }
 /*==============================================
@@ -94,23 +94,23 @@ HEADER SECTION
 
 #header {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
 }
 .header-search-menu {
+    border-bottom: 1px solid #696969;
+    display: flex;
     grid-column: 1/4;
     grid-row: 1;
-    display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #696969;
 }
 .fa-caret-left {
     color: #26A5F7;
-    font-size: 1em;
     display: inline;
-    vertical-align: top;
+    font-size: 1em;
     margin: 0px -9px 0px 0px;
+    vertical-align: top;
 }
 .text-blue {
     color: #26A5F7;
@@ -122,17 +122,17 @@ HEADER SECTION
     width: 95%;
 }
 #search-input {
-    border: none;
     background: inherit;
+    border: none;
     margin-top: 22px;
     width: 80%;
 }
 .header-content {
+    display: flex;
     grid-column: 1/4;
     grid-row: 2;
-    margin: 2em 0em 2em 2em;
-    display: flex;
     justify-content: flex-start;
+    margin: 2em 0em 2em 2em;
 }
 .headline {
     width: 90%;
@@ -147,18 +147,18 @@ HEADER SECTION
 }
 .header-nav ul>li {
     display: inline;
+    font-size: .8em;
     list-style-type: none;
-    text-align: center;
     margin: 14px 16px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8em;
 }
 .header-nav ul>li:hover,
 .active {
     border-bottom: 2px solid #26A5F7;
-    padding: 0px 0px 6px 0px;
     color: #000;
+    padding: 0px 0px 6px 0px;
 }
 /*=============================================
 SECTION 1
@@ -173,11 +173,11 @@ h3 {
 }
 .circle {
     border-radius: 50%;
-    height: 8em;
-    width: 8em;
     border: .5em solid #DAE5EA;
     display: inline-flex;
+    height: 8em;
     margin-right: 1em;
+    width: 8em;
 }
 .green {
     border-bottom: .5em solid #4CB7BF;
@@ -195,8 +195,8 @@ h3 {
     transform: rotate(45deg);
 }
 .circle-text {
-    text-align: center;
     margin: auto;
+    text-align: center;
     transform: rotate(-45deg);
 }
 .section1-btn {
@@ -207,49 +207,49 @@ h3 {
 }
 .chart-image {
     background-image: url('./images/jeff-chart.png');
-    background-size: contain;
     background-repeat: no-repeat;
-    height: 8em;
-    width: 20em;
-    margin: auto;
+    background-size: contain;
     display: block;
+    height: 8em;
+    margin: auto;
+    width: 20em;
 }
 .chart-image:hover {
     background-image: url('./images/jeff-chart2.png');
 }
 /*========================================================
- The side navigation menu 
+The side navigation menu 
 ========================================================*/
 
 .nav-photo {
     border-radius: 50%;
     height: 7em;
+    margin-bottom: 1em;
     width: 7em;
-    margin-bottom: 1em
 }
 .nav-photo-top {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #707E94;
+    height: 100%;
+    left: 0;
     overflow-x: hidden;
     padding-top: 60px;
+    position: fixed;
+    top: 0;
     transition: 0.5s;
+    width: 0;
+    z-index: 1;
 }
 .sidenav a {
-    padding: .4em 0em;
-    text-decoration: none;
-    font-size: 1em;
     color: #C0C0C0;
     display: block;
+    font-size: 1em;
+    padding: .4em 0em;
+    text-decoration: none;
     transition: 0.3s
 }
 .sidenav p {
@@ -257,9 +257,9 @@ h3 {
     margin-bottom: 1em;
 }
 .sidenav .fa {
-    margin: 0em 1em 0em 2em;
     color: #C0C0C0;
     font-size: 1em;
+    margin: 0em 1em 0em 2em;
     padding: .4em 0em;
 }
 .sidenav hr {
@@ -285,16 +285,16 @@ h3 {
     display: flex;
 }
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
+    color: #fff;
     font-size: 36px;
     margin-left: 50px;
-    color: #fff;
+    position: absolute;
+    right: 25px;
+    top: 0;
 }
 #main {
-    transition: margin-left .5s;
     padding: 20px;
+    transition: margin-left .5s;
 }
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -309,42 +309,42 @@ MAIN CONTENT SECTION
 ====================================================*/
 
 .main-content-wrapper {
-    margin: 3em 0em 3em 3em;
     background-color: #fff;
-    height: auto;
     border-bottom: 1px solid #7e8ca6;
+    height: auto;
+    margin: 3em 0em 3em 3em;
 }
 .main-content {
-    min-height: 5em;
-    border-bottom: 1px solid #7e8ca6;
-    padding: 1em 0em;
-    margin: 0 1em;
-    display: flex;
     align-items: center;
+    border-bottom: 1px solid #7e8ca6;
+    display: flex;
     justify-content: flex-start;
+    margin: 0 1em;
+    min-height: 5em;
+    padding: 1em 0em;
 }
 .main-content-btn {
-    color: #fff;
     background-color: #7E8CA6;
-    padding: 10px;
+    color: #fff;
     font-size: 1em;
+    padding: 10px;
 }
 .company-logo {
     border-radius: 100%;
-    height: 3em;
-    width: 3em;
-    vertical-align: middle;
     border: .5px solid #7e8ca6;
-    padding: .2em;
+    height: 3em;
     margin-right: 0.5em;
+    padding: .2em;
+    vertical-align: middle;
+    width: 3em;
 }
 .main-content .fa-pencil {
     color: #fff;
 }
 .main-content span {
-    font-weight: 700;
-    flex: 1;
     color: #7e8ca6;
+    flex: 1;
+    font-weight: 700;
 }
 .main-content p {
     flex: 4;
@@ -371,16 +371,16 @@ ASIDE
     margin-top: 3em;
 }
 .social {
+    color: #fff;
     font-size: 1.5em;
     height: 3em;
-    width: 80%;
-    color: #fff;
     margin: 0 auto .5em auto;
+    width: 80%;
 }
 .social .fa {
+    float: left;
     margin-right: .5em;
     width: 2em;
-    float: left;
 }
 .facebook {
     background-color: #4E73BF;
@@ -392,18 +392,18 @@ ASIDE
     background-color: #1581BA;
 }
 .widget {
-    width: 95%;
     margin: auto;
     padding-top: 1em;
+    width: 95%;
 }
 .widget-center {
-    width: 80%;
-    margin: 0 auto;
     border-bottom: 1px solid #707E94;
+    margin: 0 auto;
+    width: 80%;
 }
 h5 {
-    font-weight: 500;
     font-size: 1.2em;
+    font-weight: 500;
     margin-bottom: .5em;
 }
 aside article>p {
@@ -411,33 +411,33 @@ aside article>p {
 }
 .copy-btn {
     background-color: #4CBBBE;
+    color: #fff;
     line-height: 3em;
     width: 20%;
-    color: #fff;
 }
 #job-link {
-    width: 78%;
+    background-color: #fff;
     line-height: 3em;
     margin: 1em 0em;
-    background-color: #fff;
+    width: 78%;
 }
 #button-widget {
-    width: 78%;
-    line-height: 3em;
     background-color: #fff;
+    line-height: 3em;
     margin: 1em 0em;
+    width: 78%;
 }
 #upload-resumes {
-    width: 100%;
-    line-height: 3em;
     background-color: #fff;
+    line-height: 3em;
     margin: 1em 0em;
+    width: 100%;
 }
 #job-link::placeholder,
 #button-widget::placeholder,
 #upload-resumes::placeholder {
-    padding-left: 1em;
     font-size: 1.5em;
+    padding-left: 1em;
 }
 /*====================================================
 MEDIA QUERIES
@@ -447,28 +447,28 @@ MEDIA QUERIES
 @media (max-width: 768px) {
     wrapper {
         display: grid;
+        grid-gap: 0px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-gap: 0px;
     }
     #header {
         grid-row: 1;
     }
     #section1 {
+        align-items: center;
         flex-direction: column;
         grid-row: 2;
-        align-items: center;
     }
     .drawer {
         grid-row: 3;
     }
     #section2 {
-        grid-row: 4;
         grid-column: 1/4;
+        grid-row: 4;
     }
     #aside {
-        grid-row: 5;
         grid-column: 1/4;
+        grid-row: 5;
     }
     .round-button {
         font-size: 1em;
@@ -484,19 +484,19 @@ MEDIA QUERIES
         justify-content: space-between;
     }
     .header-content {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         margin: 2em 0em 2em 0em;
     }
     .headline {
-        text-align: center;
-        margin-bottom: 1em;
         font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
     }
     .main-content-wrapper {
-        margin: 1em;
-        height: auto;
         border-bottom: 1px solid #7e8ca6;
+        height: auto;
+        margin: 1em;
     }
     .main-content p {
         flex: 3;
@@ -523,9 +523,9 @@ MEDIA QUERIES
         width: 12em;
     }
     .left-side {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     h3 {
         font-size: 2em;
@@ -552,45 +552,45 @@ MEDIA QUERIES
 @media (min-width: 768px) and (max-width: 1024px) {
     wrapper {
         display: grid;
+        grid-gap: 0px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-gap: 0px;
     }
     #header {
         grid-row: 1;
     }
     #section1 {
+        align-items: center;
         flex-direction: column;
         grid-row: 2;
-        align-items: center;
     }
     .drawer {
         grid-row: 3;
     }
     #section2 {
-        grid-row: 4;
         grid-column: 1/4;
+        grid-row: 4;
     }
     #aside {
-        grid-row: 5;
-        grid-column: 1/4;
         display: grid;
+        grid-column: 1/4;
+        grid-row: 5;
         grid-template-columns: 1fr 1fr;
     }
     .main-content-wrapper {
-        margin: 1em;
-        height: auto;
         border-bottom: 1px solid #7e8ca6;
+        height: auto;
+        margin: 1em;
     }
     .header-content {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         margin: 2em 0em 2em 0em;
     }
     .headline {
-        text-align: center;
-        margin-bottom: 1em;
         font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
     }
     .round-button {
         font-size: 1em;
@@ -602,8 +602,8 @@ MEDIA QUERIES
     }
     .circle {
         height: 12em;
-        width: 12em;
         margin: 1em;
+        width: 12em;
     }
     h3 {
         font-size: 2.5em;
